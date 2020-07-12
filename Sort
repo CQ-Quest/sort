@@ -1,4 +1,4 @@
-![](https://github.com/CQ-Quest/sort/blob/master/sort_conclusion.png)
+![Image](https://github.com/CQ-Quest/sort/blob/master/sort_conclusion.png)
 1-插入排序        稳定性：稳定
 原理：每次将一个排序元素按照关键字大小插入到已排序的序列中。
 Key code：
@@ -279,4 +279,4 @@ Shell排序	    O(n1.3)	     O(1)	                      不稳定
 快速排序	 O(n㏒2n)	  O(n^2)	     O(㏒2n)	   不稳定
 —————————————————————————————————————————————————————————————————————————
 
-![](https://github.com/CQ-Quest/sort/blob/master/ccompare.png)
+![Image](https://github.com/CQ-Quest/sort/blob/master/ccompare.png)
