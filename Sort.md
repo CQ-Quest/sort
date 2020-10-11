@@ -123,8 +123,25 @@ Key code：
 			else   return;
 		}
 
+______________________________________________________________________________
 
-
+		void Quicksort(int a[],int l,int r){
+		   int i,j;
+		   i=l;
+		   j=r;
+		   a[0]=a[i];
+		   while(i<j){
+			while(i<j&&a[j]>a[0])  j--;
+			if(i<j)    a[i++]=a[j];
+			while(i<j&&a[i]<a[0])  i++;
+			if(i<j)    a[j--]=a[i];
+		   } 
+		   a[i]=a[0];
+		   if(l<r){
+			Quicksort(a,l,i-1);
+			Quicksort(a,i+1,r);
+		   }
+		}
 
 6-归并排序       稳定性：稳定  
 原理：将以有序的子序列合并，得到完全有序的序列；即使每一个子序列有序，再使子序列段间有序。若将两个有序表合成一个有序表，称为二路归并排序。  
